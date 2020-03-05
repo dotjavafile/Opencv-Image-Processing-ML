@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Eyetech powerd by Stagnoli</title>
+
+    <!-- Custom fonts for this template-->
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+
+    <!-- Custom styles for this template-->
+    <link href="css/sb-admin-2.min.css" rel="stylesheet">
+
+    
+</head>
+
+<body id="page-top" onload="init()">
+
+    <!-- Page Wrapper -->
+    <div id="wrapper">
+
+        <!-- Sidebar -->
+        <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+
+            <!-- Sidebar - Brand -->
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+                <div class="sidebar-brand-icon rotate-n-15">
+                    <i class="fas fa-eye"></i>
+                </div>
+                <div class="sidebar-brand-text mx-3">Eyetech</div>
+            </a>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider my-0">
+
+            <!-- Nav Item - Dashboard -->
+            <li class="nav-item active">
+                <a class="nav-link" data-toggle="" href="#">
+                    <i class="fas fa-fw fa-tachometer-alt"></i>
+                    <span class="lang" key="DASHBOARD"></span></a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="manager aree.html">
+                    <i class="fas fa-fw fa-draw-polygon"></i>
+                    <span class="lang" key="MANAGER AREE"></span></a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="tables.html">
+                    <i class="fas fa-fw fa-history"></i>
+                    <span class="lang" key="LOG"></span></a>
+            </li>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider">
+
+            <!-- Heading -->
+            <div class="sidebar-heading lang" key="INTERFACE">
+            </div>
+
+            <!-- Nav Item - Pages Collapse Menu -->
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                    <i class="fas fa-fw fa-cog"></i>
+                    <span class="lang" key="CONFIG"></span>
+                </a>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <h6 class="collapse-header lang" key="CONGIF"></h6>
+                        <a class="collapse-item lang" href="buttons.html" key="SETTINGS"></a>
+                        <a class="collapse-item lang" href="cards.html" key="BACKUP"></a>
+                    </div>
+                </div>
+            </li>
+
+            <!-- Sidebar Toggler (Sidebar) -->
+            <div class="text-center d-none d-md-inline">
+                <button class="rounded-circle border-0" id="sidebarToggle"></button>
+            </div>
+
+        </ul>
+        <!-- End of Sidebar -->
+
+        <!-- Content Wrapper -->
+        <div id="content-wrapper" class="d-flex flex-column">
+
+            <!-- Main Content -->
+            <div id="content">
+
+                <!-- Topbar -->
+                <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+
+                    <!-- Sidebar Toggle (Topbar) -->
+                    <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
+                        <i class="fa fa-bars"></i>
+                    </button>
+
+                    <!-- Topbar Navbar -->
+                    <ul class="navbar-nav ml-auto">
+                        <!-- Nav Item - Alerts -->
+                        <li class="nav-item dropdown no-arrow mx-1">
+                            <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-bell fa-fw"></i>
+                                <!-- Counter - Alerts -->
+                                <span class="badge badge-danger badge-counter"></span>
+                            </a>
+                            <!-- Dropdown - Alerts -->
+                            <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="alertsDropdown">
+                                <h6 class="dropdown-header lang" key="NOTIF">
+
+                </h6>
+                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                    <div class="mr-3">
+                                        <div class="icon-circle bg-primary">
+                                            <i class="fas fa-file-alt text-white"></i>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="small text-gray-500">date time</div>
+                                        <span class="font-weight-bold">New alert </span>
+                                    </div>
+                                </a>
+                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                    <div class="mr-3">
+                                        <div class="icon-circle bg-success">
+                                            <i class="fas fa-donate text-white"></i>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="small text-gray-500">date time</div>
+                                        Second alert
+                                    </div>
+                                </a>
+                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                    <div class="mr-3">
+                                        <div class="icon-circle bg-warning">
+                                            <i class="fas fa-exclamation-triangle text-white"></i>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="small text-gray-500">date time</div>
+                                        First alert
+                                    </div>
+                                </a>
+                                <a class="dropdown-item text-center small text-gray-500 lang" href="log.html" key="SEE ALERTS"></a>
+                            </div>
+                        </li>
+
+                        <div class="topbar-divider d-none d-sm-block"></div>
+
+                        <!-- Nav Item - User Information -->
+                        <li class="nav-item dropdown no-arrow mx-1">
+                            <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span class="mr-2 d-lg-inline"><i class="fas fa-language fa-fw"></i></span>
+                            </a>
+                            <!-- Dropdown - User Information -->
+                            <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
+                                <a class="dropdown-item translate" id="en-gb" href="#">
+                  Eng
+                </a>
+                                <a class="dropdown-item translate" id="it-it" href="#">
+                  Ita
+                </a>
+                            </div>
+                        </li>
+
+                    </ul>
+
+                </nav>
+                <!-- End of Topbar -->
+
+                <!-- Begin Page Content -->
+                <div class="container-fluid">
+
+                    <!-- Page Heading -->
+                    <h1 class="h3 mb-4 text-gray-800 lang" key="AREE NAME"></h1>
+                    <div class="row">
+                        <div class="col-lg-4">
+
+                            <!-- Default Card Example -->
+                            <div class="card mb-4">
+                                <div class="card-header lang" key="aree_prev">
+                                </div>
+                                <div class="card-body">
+                                    <img class="img-fluid" src="img/camera.jpg" />
+                                    <hr>
+                                    <button type="button" class="btn btn-success push-right lang" data-toggle="modal" data-target="#exampleModal" key="aree_add_new"></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-8">
+                            <!-- Default Card Example -->
+                            <div class="card mb-4">
+                                <div class="card-header lang" key="aree_table">
+                                </div>
+                                <div class="card-body">
+                                    <div class="table-responsive">
+                                        <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                                            <thead>
+                                                <th>Id</th>
+                                                <th>Name</th>
+                                                <th>Type</th>
+                                                <th>Status</th>
+                                                <th>Target</th>
+                                                <th>Action</th>
+                                            </thead>
+                                            <tfoot>
+                                                 <th>Id</th>
+                                                <th>Name</th>
+                                                <th>Type</th>
+                                                <th>Status</th>
+                                                <th>Target</th>
+                                                <th>Action</th>
+                                            </tfoot>
+                                            <tbody>
+                                                <tr>
+                                                    <td>1</td>
+                                                    <td>ZONE 1</td>
+                                                    <td>Start</td>
+                                                    <td><i class="fas fa-fw fa-circle text-danger spinner-grow" title="Triggered"></i></td>
+                                                    <td>Car, People, animal (icon)</td>
+                                                    <td>
+                                                        <div class="btn-group" role="group" aria-label="Basic example">
+                                                          <button type="button" class="btn btn-secondary"  data-toggle="modal" data-target="#exampleModal"><i class="fas fa-fw fa-edit"></i></button>
+                                                          <button type="button" class="btn btn-danger"><i class="fas fa-fw fa-trash"></i></button>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>2</td>
+                                                    <td>ZONE 2</td>
+                                                    <td>Alarm</td>
+                                                    <td><i class="fas fa-fw fa-circle text-success" title="Defused"></i></td>
+                                                    <td>Car, People, animal (icon)</td>
+                                                    <td>
+                                                        <div class="btn-group" role="group" aria-label="Basic example">
+                                                          <button type="button" class="btn btn-secondary"  data-toggle="modal" data-target="#exampleModal"><i class="fas fa-fw fa-edit"></i></button>
+                                                          <button type="button" class="btn btn-danger"><i class="fas fa-fw fa-trash"></i></button>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">NEW ZONE</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <DIV class="row">
+                                    <div class="col col-md-6">
+                                        <div class="card mb-4">
+                                            <div class="card-header lang" key="aree_prev"></div>
+                                                <div id="sample">
+                                                  <div id="myDiagramDiv" style="border: solid 1px black; width: 450px; height: 350px; background-image: url('img/camera.jpg');margin:0 auto;">
+                                                      
+                                                  </div>
+                                                  <div id="buttons" class="btn-group btn-lg push-right" role="group">                                                    
+                                                    <!--SELECT <button type="button" class="btn btn-info" onclick="mode(true, true)"><i class="fas fa-fw fa-draw-polygon"></i></button>-->
+                                                    <button type="button" class="btn btn-success" onclick="finish(true)"><i class="fas fa-fw fa-flag-checkered"></i></button>
+                                                    <!--UNDO POINT<button type="button" class="btn btn-warning" onclick="undo()"><i class="fas fa-fw fa-undo-alt"></i></button>-->
+                                                    <button type="button" class="btn btn-danger" onclick="finish(false)"><i class="fas fa-fw fa-eraser"></i></button>                                                    
+                                                </div>
+                                                    <br/>
+                                                    <label><input type="checkbox" onclick="myDiagram.allowResize = !myDiagram.allowResize; updateAllAdornments()" checked="checked" />Allow Resizing</label>
+                                                    <label><input type="checkbox" onclick="myDiagram.allowReshape = !myDiagram.allowReshape; updateAllAdornments()" checked="checked" />Allow Reshaping</label>
+                                                    <label><input type="checkbox" onclick="myDiagram.allowRotate = !myDiagram.allowRotate; updateAllAdornments()" checked="checked" />Allow Rotating</label>                                             
+                                                  <div>
+                                                    <button onclick="save()">Save</button>
+                                                    <button onclick="load()">Load</button>
+                                                  </div>
+                                                 <textarea id="mySavedDiagram" style="width:100%;height:300px">
+                                                { "position": "0 0",
+                                                  "model": { "class": "go.GraphLinksModel",
+                                                  "nodeDataArray": [ {"loc":"183 148", "category": "PolygonDrawing", "geo":"F M0 145 L75 2 L131 87 L195 0 L249 143z", "key":-1} ],
+                                                  "linkDataArray": [  ]
+                                                } }
+                                                  </textarea>
+                                                </div>                                          
+                                            <!--<span>Point:<span class="AR_point">()</span></span>-->
+                                        </div>
+                                    </DIV>
+                                    <div class="col col-md-6">
+                                        <div class="card mb-8">
+                                            <div class="card-header lang" key="aree_prev">
+                                            </div>
+                                            <div class="card-body">
+                                                <div class="accordion" id="accordionExample">
+                                                    <div class="card">
+                                                        <div class="card-header" id="headingOne">
+                                                            <h2 class="mb-0">
+                      <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Config General
+                      </button>
+                    </h2>
+                                                        </div>
+                                                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                                                            <div class="card-body">
+                                                                <div class="form-group">
+                                                                    <label for="exampleInputEmail1">ID</label>
+                                                                    <input type="text" class="form-control" id="AR_id">
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <label for="exampleInputEmail1">NAME</label>
+                                                                    <input type="text" class="form-control" id="AR_name">
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <label for="exampleInputEmail1">TYPE</label>
+                                                                    <select class="form-control">
+                                                                        <option>Start</option>
+                                                                        <option>Stop</option>
+                                                                        <option>Safety</option>
+                                                                        <option>Aux</option>
+                                                                    </select>
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <label for="exampleInputEmail1">Color</label>
+                                                                    <input type="color" class="form-control" width="100" id="AR_id">
+                                                                </div>
+                                                                <div class="row">
+                                                                <div class="form-group col-md-6">
+                                                                    <label for="exampleInputEmail1">ENTERING first side</label>
+                                                                    <select class="form-control">
+                                                                        <option>A</option>
+                                                                        <option>B</option>
+                                                                        <option>C</option>
+                                                                        <option>...</option>
+                                                                    </select>
+                                                                </div>
+                                                                <div class="form-group col-md-6">
+                                                                     <label for="exampleInputEmail1">ENTERING second side</label>
+                                                                    <select class="form-control">
+                                                                        <option>A</option>
+                                                                        <option>B</option>
+                                                                        <option>C</option>
+                                                                        <option>...</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                                <div class="row">
+                                                                <div class="form-group col-md-6">
+                                                                    <label for="exampleInputEmail1">OUTGOING first side</label>
+                                                                    <select class="form-control">
+                                                                        <option>A</option>
+                                                                        <option>B</option>
+                                                                        <option>C</option>
+                                                                        <option>...</option>
+                                                                    </select>
+                                                                </div>
+                                                                <div class="form-group col-md-6">
+                                                                     <label for="exampleInputEmail1">OUTGOING second side</label>
+                                                                    <select class="form-control">
+                                                                        <option>A</option>
+                                                                        <option>B</option>
+                                                                        <option>C</option>
+                                                                        <option>...</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card">
+                                                        <div class="card-header" id="headingTwo">
+                                                            <h2 class="mb-0">
+                      <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Parameters
+                      </button>
+                    </h2>
+                                                        </div>
+                                                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                                                            <div class="card-body">
+                                                                <div class="form-group">
+                                                                    <label for="">TARGET</label>
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input" type="checkbox" value="" id="tghumans">
+                                                                        <label class="form-check-label" for="tghumans">
+                                                                            Humans
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input" type="checkbox" value="" id="tganimals">
+                                                                        <label class="form-check-label" for="tganimals">
+                                                                            Animals
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input" type="checkbox" value="" id="tgcars">
+                                                                        <label class="form-check-label" for="tgcars">
+                                                                            Cars
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input" type="checkbox" value="" id="tgtrucks">
+                                                                        <label class="form-check-label" for="tgtrucks">
+                                                                            Trucks
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input" type="checkbox" value="" id="tgbicycles">
+                                                                        <label class="form-check-label" for="tgbicycles">
+                                                                            Bicycle
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input" type="checkbox" value="" id="tgmotorcycle">
+                                                                        <label class="form-check-label" for="tgmotorcycle">
+                                                                            Motorcycle
+                                                                        </label>
+                                                                    </div>
+                                                                </div>
+                                                                <hr>
+                                                                <div class="form-group">
+                                                                    <label for="exampleInputEmail1">TRIGGER</label>
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input" type="radio" name="trigger" value="" id="trentering">
+                                                                        <label class="form-check-label" for="trentering">
+                                                                            Entering
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input" type="radio" name="trigger"  value="" id="troutgoing">
+                                                                        <label class="form-check-label" for="troutgoing">
+                                                                            Outgoing
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input" type="radio" name="trigger" value="" id="trstay">
+                                                                        <label class="form-check-label" for="trstay">
+                                                                            Stay
+                                                                        </label>
+                                                                    </div>
+                                                                </div>
+                                                                <hr>
+                                                                <div class="form-group">
+                                                                    <label for="exampleInputEmail1">DEFUSE</label>
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input" type="radio" name="trigger"  value="" id="dfentering">
+                                                                        <label class="form-check-label" for="dfentering">
+                                                                            Entering
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input" type="radio" name="trigger"  value="" id="dfoutging">
+                                                                        <label class="form-check-label" for="dfoutgoing">
+                                                                            Outgoing
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input" type="radio" name="trigger"  value="" id="dfstay">
+                                                                        <label class="form-check-label" for="defaultCheck1">
+                                                                            Stay
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input" type="radio" name="trigger"  value="" id="dfautomatic">
+                                                                        <label class="form-check-label" for="dfautomatic">
+                                                                            Automatic
+                                                                            <input type="number" name="auxs" width="20px">
+                                                                        </label>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </DIV>
+                            </div>
+
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Save changes</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /.container-fluid -->
+
+            </div>
+            <!-- End of Main Content -->
+
+            <!-- Footer -->
+            <footer class="sticky-footer bg-white">
+                <div class="container my-auto">
+                    <div class="copyright text-center my-auto">
+                        <span>Copyright &copy; Your Website 2019</span>
+                    </div>
+                </div>
+            </footer>
+            <!-- End of Footer -->
+
+        </div>
+        <!-- End of Content Wrapper -->
+
+    </div>
+    <!-- End of Page Wrapper -->
+
+    <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded" href="#page-top">
+        <i class="fas fa-angle-up"></i>
+    </a>
+
+    <!-- Logout Modal-->
+    <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+                    <a class="btn btn-primary" href="login.html">Logout</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <script src="js/lang.json"></script>
+    <script src="js/sb-admin-2.js"></script>
+
+    <!-- Core plugin JavaScript-->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for all pages-->
+    <script src="js/sb-admin-2.min.js"></script>
+
+    <!-- Page level plugins -->
+    <script src="vendor/datatables/jquery.dataTables.min.js"></script>
+    <script src="vendor/datatables/dataTables.bootstrap4.min.js"></script>
+
+    <!-- Page level custom scripts -->
+    <script src="js/demo/datatables-demo.js"></script>
+    <!--DRAW-->
+    <script src="js/highlight.js"></script>
+    <script src="js/go.js"></script>
+    <script src="js/PolygonDrawingTool.js"></script>
+    <script src="js/GeometryReshapingTool.js"></script>
+
+    <script id="code">
+    function init() {
+      if (window.goSamples) goSamples();  // init for these samples -- you don't need to call this
+      var $ = go.GraphObject.make;
+      myDiagram = $(go.Diagram, "myDiagramDiv");
+      myDiagram.toolManager.mouseDownTools.insertAt(3, new GeometryReshapingTool());
+
+      myDiagram.nodeTemplateMap.add("PolygonDrawing",
+        $(go.Node,
+          { locationSpot: go.Spot.Center },  // to support rotation about the center
+          new go.Binding("location", "loc", go.Point.parse).makeTwoWay(go.Point.stringify),
+          {
+            selectionAdorned: true, selectionObjectName: "SHAPE",
+            selectionAdornmentTemplate:  // custom selection adornment: a blue rectangle
+              $(go.Adornment, "Auto",
+                $(go.Shape, { stroke: "dodgerblue", fill: null }),
+                $(go.Placeholder, { margin: -1 }))
+          },
+          { resizable: true, resizeObjectName: "SHAPE" },
+          { rotatable: true, rotateObjectName: "SHAPE" },
+          { reshapable: true },  // GeometryReshapingTool assumes nonexistent Part.reshapeObjectName would be "SHAPE"
+          $(go.Shape,
+            { name: "SHAPE", fill: "lightgray", strokeWidth: 1.5 },
+            new go.Binding("desiredSize", "size", go.Size.parse).makeTwoWay(go.Size.stringify),
+            new go.Binding("angle").makeTwoWay(),
+            new go.Binding("geometryString", "geo").makeTwoWay(),
+            new go.Binding("fill"),
+            new go.Binding("stroke"),
+            new go.Binding("strokeWidth"))
+        ));
+
+      // create polygon drawing tool for myDiagram, defined in PolygonDrawingTool.js
+      var tool = new PolygonDrawingTool();
+      // provide the default JavaScript object for a new polygon in the model
+      tool.archetypePartData =
+        { fill: "yellow", stroke: "blue", strokeWidth: 3, category: "PolygonDrawing" };
+      tool.isPolygon = true;  // for a polyline drawing tool set this property to false
+      // install as first mouse-down-tool
+      myDiagram.toolManager.mouseDownTools.insertAt(0, tool);
+
+      load();  // load a simple diagram from the textarea
+    }
+
+    function mode(draw, polygon) {
+      // assume PolygonDrawingTool is the first tool in the mouse-down-tools list
+      var tool = myDiagram.toolManager.mouseDownTools.elt(0);
+      tool.isEnabled = draw;
+      tool.isPolygon = polygon;
+      tool.archetypePartData.fill = (polygon ? "yellow" : null);
+      tool.temporaryShape.fill = (polygon ? "yellow" : null);
+    }
+
+    // this command ends the PolygonDrawingTool
+    function finish(commit) {
+      var tool = myDiagram.currentTool;
+      if (commit && tool instanceof PolygonDrawingTool) {
+        var lastInput = myDiagram.lastInput;
+        if (lastInput.event instanceof window.MouseEvent) tool.removeLastPoint();  // remove point from last mouse-down
+        tool.finishShape();
+      } else {
+        tool.doCancel();
+      }
+    }
+    // this command removes the last clicked point from the temporary Shape
+    function undo() {
+      var tool = myDiagram.currentTool;
+      if (tool instanceof PolygonDrawingTool) {
+        var lastInput = myDiagram.lastInput;
+        if (lastInput.event instanceof window.MouseEvent) tool.removeLastPoint();  // remove point from last mouse-down
+        tool.undo();
+      }
+    }
+    function updateAllAdornments() {  // called after checkboxes change Diagram.allow...
+      myDiagram.selection.each(function(p) { p.updateAdornments(); });
+    }
+    // save a model to and load a model from Json text, displayed below the Diagram
+    function save() {
+      var str = '{ "position": "' + go.Point.stringify(myDiagram.position) + '",\n  "model": ' + myDiagram.model.toJson() + ' }';
+      document.getElementById("mySavedDiagram").value = str;
+    }
+    function load() {
+      var str = document.getElementById("mySavedDiagram").value;
+      try {
+        var json = JSON.parse(str);
+        myDiagram.initialPosition = go.Point.parse(json.position || "0 0");
+        myDiagram.model = go.Model.fromJson(json.model);
+        myDiagram.model.undoManager.isEnabled = true;
+      } catch (ex) {
+        alert(ex);
+      }
+    }
+  </script>
+</body>
+</html>

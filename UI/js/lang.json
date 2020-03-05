@@ -1,0 +1,59 @@
+langJso={
+  "it-it":{
+  //Menu side bar
+    "DASHBOARD": "Cruscotto",
+    "MANAGER AREE": "Gestione Aree",
+    "LOG": "Log",
+    "INTERFACE":"Interfaccia",
+    "CONFIG":"Configurazioni",
+    "SETTINGS":"Impostazioni",
+    "BACKUP":"Gestione Backup",
+    "NOTIF":"Notifiche",
+    "SEE ALERTS":"Vedi tutte le notifiche",
+  //LOG PAGE
+    "LOG NAME":"Log sistema",
+    "LOG TEXT":"Il log è stato studiato appositamente per tenere in memoria gli ultimi 500 eventi. Tiene traccia di: data e ora, fotogramma e ovviamente tipo di allarme.",
+    "log_table_id":"Id",
+    "log_table_name":"Nome",
+    "log_table_datetime":"Date e ora",
+    "log_table_type":"Tipo",
+    "log_table_see":"Guarda foto",
+    "log_table_action":"Azioni",
+  //AREE
+    "AREE NAME":"Gestione Aree",
+    "AREE TEXT":"Sezione di gestione delle zone sensibili definite dall'utente.",
+    "aree_add_new":"Nuova area sensibile",
+    "aree_prev":"Anteprima",
+    "aree_table":"Aree sensibili",
+
+  },
+  "en-gb": {
+  //Menu side bar
+    "DASHBOARD": "Dashboard",
+    "MANAGER AREE": "Zone Manager",
+    "LOG": "Log",
+    "INTERFACE":"Interface",
+    "CONFIG":"Config",
+    "SETTINGS":"Settings",
+    "BACKUP":"Backup",
+    "NOTIF":"Notification",
+    "SEE ALERTS":"Check all Notification",
+    
+    //LOG PAGE
+    "LOG NAME":"System Log",
+    "LOG TEXT":"This Log is studied to memorize last 500 events, stocking dateime, photo and alarma type.", 
+    "log_table_id":"Id",
+    "log_table_name":"Nome",
+    "log_table_datetime":"Date e ora",
+    "log_table_type":"Type",
+    "log_table_see":"Guarda foto",
+    "log_table_action":"Azioni",
+
+    //AREE
+    "AREE NAME":"Zone Manager",
+    "AREE TEXT":"Manage your zone here.",
+    "aree_add_new":"New zone",
+    "aree_prev":"Preview",
+    "aree_table":"Zone",
+    }
+} 
